@@ -1,0 +1,449 @@
+@font-face {
+  font-family: "Kurye";
+  font-weight: 100;
+  src: url("./fonts/Kurye-Thin.otf") format("truetype");
+}
+@font-face {
+  font-family: "Kurye";
+  font-weight: 300;
+  src: url("./fonts/Kurye-Light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kurye";
+  font-weight: 400;
+  src: url("./fonts/Kurye-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kurye";
+  font-weight: 500;
+  src: url("./fonts/Kurye-Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kurye";
+  font-weight: 600;
+  src: url("./fonts/Kurye-SemiBold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kurye";
+  font-weight: 700;
+  src: url("./fonts/Kurye-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kurye";
+  font-weight: 900;
+  src: url("./fonts/Kurye-Black.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+  font-weight: 100;
+  src: url("./fonts/GalanoGrotesqueThin.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+  font-weight: 400;
+  src: url("./fonts/GalanoGrotesqueRegular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+  font-weight: 500;
+  src: url("./fonts/GalanoGrotesqueMedium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+  font-weight: 700;
+  src: url("./fonts/GalanoGrotesqueBold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+  font-weight: 900;
+  src: url("./fonts/GalanoGrotesqueBlack.otf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Galano Grotesque", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem 2rem 1.5rem;
+}
+
+.container .cta-form {
+  width: 100%;
+  margin: 10rem 0;
+  text-align: center;
+}
+.cta-form h2 {
+  font-size: 2.3rem;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 4rem;
+  font-weight: 600;
+}
+
+.cta-form p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: white;
+  width: 100%;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #c975ae;
+  font-weight: 500;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #e8a1d1;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formbold-mb-5 {
+  margin-bottom: 12px;
+}
+.formbold-pt-3 {
+  padding-top: 12px;
+}
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 0 0 48px 0;
+  width: 100%;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.formbold-form-label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0a0a0a;
+  margin-bottom: 12px;
+}
+
+.formbold-form-label-2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.formbold-form-input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0a0a0a;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input:focus {
+  border-color: #e9a1d2;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.upload-area {
+  border: none;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.upload-area-icon {
+  display: block;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.upload-area-icon svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.formbold-drop-file {
+  display: block;
+  font-weight: 600;
+  color: #0a0a0a;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.formbold-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 14px 32px;
+  border: none;
+  font-weight: 600;
+  background-color: #e9a1d2;
+  color: white;
+  cursor: pointer;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.formbold-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.w-full {
+  width: 100%;
+}
+
+.formbold-file-input input {
+  opacity: 0;
+  position: absolute;
+}
+
+.formbold-file-input label {
+  position: relative;
+  border: 1px dashed #e0e0e0;
+  border-radius: 6px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 0;
+}
+
+.formbold-file-input label:hover,
+.formbold-file-input label:focus {
+  border: 1px dashed #e9a1d2;
+}
+
+.formbold-or {
+  font-weight: 400;
+  font-size: 16px;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 8px;
+}
+.formbold-browse {
+  font-weight: 700;
+  font-size: 16px;
+  color: #d884be;
+  display: inline-block;
+  padding: 8px 28px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.formbold-file-list {
+  width: 100%;
+  border-radius: 12px;
+  background-color: #f5f7fb;
+  background-image: linear-gradient(316deg, #e9a1d21b 0%, #9af7f110 74%);
+  border: 1px solid #e9a1d2;
+  padding: 16px 32px;
+}
+
+.formbold-file-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formbold-file-item button {
+  color: #0a0a0a;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.formbold-file-name {
+  font-weight: 400;
+  font-size: 16px;
+  color: #0a0a0a;
+  padding-right: 12px;
+}
+
+.formlogo {
+  height: 60px;
+}
+
+.logosContainer {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer {
+  margin: 0;
+  margin-top: auto;
+}
+.sponsorsContainer {
+  padding: 3rem 1rem;
+  width: 100%;
+  background: #ffffff4b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sponsorsLogosContainer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+nav {
+  background-color: #0a0a0a4b;
+  box-shadow: 2px 2px 2px 1px rgba(153, 153, 153, 0.1);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 5rem;
+  /*max-width: 1200px;*/
+}
+
+.copyrightscontainer {
+  padding: 20px 10px;
+  background-color: #0a0a0a;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.copyrights {
+  font-size: 1rem;
+  color: #f5f5f5;
+}
+
+img {
+  justify-self: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+}
+
+@media (min-width: 550px) {
+  .sm\:w-half {
+    width: 50%;
+  }
+}
+
+@media (max-width: 550px) {
+  .formbold-form-wrapper {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 912px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5rem;
+  }
+  .container .cta-form {
+    margin-bottom: 0;
+    margin-right: 10rem;
+    text-align: left;
+  }
+  .cta-form h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin: 0;
+  }
+  .cta-form {
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-form p {
+    max-width: 600px;
+  }
+}
