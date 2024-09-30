@@ -434,7 +434,8 @@ img {
   }
   .cta-form h2 {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 5rem;
     text-align: left;
     margin-bottom: 1rem;
     margin: 0;
