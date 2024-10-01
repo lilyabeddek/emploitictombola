@@ -148,13 +148,11 @@
         return Math.floor(Math.random() * (end - start + 1) + start);
       }
 
-      /*
       const prizes = [
         "https://drive.google.com/file/d/1mM_-vKM4CZgxpOg53VjJ_RLQVzhI23v8/view?usp=sharing",
         "https://drive.google.com/file/d/1AmZFiYE77FG-9xXoRMQL-j0Cn_pjkSMI/view?usp=sharing",
         "https://drive.google.com/file/d/1gxsT2wtauZWYcbRoAd1vqbs--xJNSdp7/view?usp=sharing",
       ];
-      */
 
       const form = document.getElementById("form");
       const file = document.getElementById("file");
@@ -235,8 +233,8 @@
               winnerElementContent.append(winnerSpan);
 
               for (
-                var cellindex = Math.min(rows[winnerindex].length, 49);
-                cellindex < Math.min(rows[winnerindex].length, 50);
+                var cellindex = Math.min(rows[winnerindex].length, 1);
+                cellindex < Math.min(rows[winnerindex].length, 3);
                 cellindex++
               ) {
                 var winnerSpan = document.createElement("span");
@@ -248,7 +246,7 @@
               /*
               winnerSpan = document.createElement("span");
               winnerSpan.className = "formbold-file-name";
-              console.log(prizes[cpt - 1]);
+              //console.log(prizes[cpt - 1]);
               winnerSpan.innerHTML = `<br/><a href=${
                 cpt <= 3 ? prizes[cpt - 1] : prizes[2]
               } target="_blank"> Click pour voir la récompense ! <i class='fas fa-angle-double-right'></a><br/>`;
